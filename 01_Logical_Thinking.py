@@ -27,12 +27,21 @@ a=a*b
 b=a-b
 #print('b=%i'%b)
 print('a=%i b=%i'%(a,b))
-'''
+
 # 1.3p
 c=1.5
 a=c
 b=a*5
 c=a+b
 print('{}:{}:{}'.format(int(a),int(b),c))
+'''
+# 1.4p
+c=5
+a=(22/7)*c
+b=(22.0/7)*c
+
+print('a:%.2f'%a)
+print('b:%i'%b)
+print('c:%.2f'%c)
 
 
