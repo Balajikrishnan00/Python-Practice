@@ -12,7 +12,7 @@ print(a)
 print('a:',id(a))
 print(b)
 print('b:',id(b))
-'''
+
 # 1.2p
 a=5
 b=10
@@ -27,4 +27,12 @@ a=a*b
 b=a-b
 #print('b=%i'%b)
 print('a=%i b=%i'%(a,b))
+'''
+# 1.3p
+c=1.5
+a=c
+b=a*5
+c=a+b
+print('{}:{}:{}'.format(int(a),int(b),c))
+
 
