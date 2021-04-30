@@ -1,4 +1,5 @@
-#1p
+'''
+# 1.1p
 a=10
 b=20
 a=a+b
@@ -11,4 +12,19 @@ print(a)
 print('a:',id(a))
 print(b)
 print('b:',id(b))
+'''
+# 1.2p
+a=5
+b=10
+a=a+a
+#print(f'%i+%i={a+b}'%(a,b))
+#print('{}+{}={}'.format(a,b,a+b))
+b=b+b
+#print('{}+{}={}'.format(a,b,a+b))
+
+a=a*b
+#print('a=%i'%a)
+b=a-b
+#print('b=%i'%b)
+print('a=%i b=%i'%(a,b))
 
