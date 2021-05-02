@@ -34,7 +34,7 @@ a=c
 b=a*5
 c=a+b
 print('{}:{}:{}'.format(int(a),int(b),c))
-'''
+
 # 1.4p
 c=5
 a=(22/7)*c
@@ -43,5 +43,13 @@ b=(22.0/7)*c
 print('a:%.2f'%a)
 print('b:%i'%b)
 print('c:%.2f'%c)
+'''
+# 1.5p
+c=5
+
+a=22*c/7
+b=22*(c/7)
+print('a=%f\nb=%d\nc=%.2f'%(a,b,c))
+
 
 
