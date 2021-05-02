@@ -64,14 +64,23 @@ print('Circumference            :%.4f'%c)
 write a program to read integers A and B produce the remainder (expressed as an integer) of
 A/B for example the remainder of 13/2 is 1. while the remainder of 29/6 is 5.
 (note: Don't use the % opetator)
-'''
-a=13
-b=2
+
+a=int(input('Enter A vaule:')
+b=int(input('Enter B value:')
 c=a//b #6
 
 d=c*b
 e=a-d
 print('%i/%i=%i'%(a,b,e))
 
+# 2.2p
+write a program to read add the value of p,r,t,Calculate and display the simple interst using the
+formula i=prt. write the output with approprite headings.
+'''
+p=50000
+r=9.5/100
+t=5
 
+si=p*r*t
+print('Principle amount is:',si)
 
