@@ -43,13 +43,35 @@ b=(22.0/7)*c
 print('a:%.2f'%a)
 print('b:%i'%b)
 print('c:%.2f'%c)
-'''
+
 # 1.5p
 c=5
 
 a=22*c/7
 b=22*(c/7)
 print('a=%f\nb=%d\nc=%.2f'%(a,b,c))
+
+# 1.6p
+r=3.75
+a=22/7.0*r*r
+c=2*3.17*r
+print('Circle Calculator')
+print('Given Radius of Circle   :%.4f'%r)
+print('Area of Given Circle     :%.4f'%a)
+print('Circumference            :%.4f'%c)
+
+# 2.1p
+write a program to read integers A and B produce the remainder (expressed as an integer) of
+A/B for example the remainder of 13/2 is 1. while the remainder of 29/6 is 5.
+(note: Don't use the % opetator)
+'''
+a=13
+b=2
+c=a//b #6
+
+d=c*b
+e=a-d
+print('%i/%i=%i'%(a,b,e))
 
 
 
