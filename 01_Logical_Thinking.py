@@ -12,7 +12,7 @@ print(a)
 print('a:',id(a))
 print(b)
 print('b:',id(b))
-
+------------------------------------------------------
 # 1.2p
 a=5
 b=10
@@ -27,14 +27,14 @@ a=a*b
 b=a-b
 #print('b=%i'%b)
 print('a=%i b=%i'%(a,b))
-
+----------------------------------------------
 # 1.3p
 c=1.5
 a=c
 b=a*5
 c=a+b
 print('{}:{}:{}'.format(int(a),int(b),c))
-
+--------------------------------------------------
 # 1.4p
 c=5
 a=(22/7)*c
@@ -43,14 +43,14 @@ b=(22.0/7)*c
 print('a:%.2f'%a)
 print('b:%i'%b)
 print('c:%.2f'%c)
-
+-------------------------------------------------
 # 1.5p
 c=5
 
 a=22*c/7
 b=22*(c/7)
 print('a=%f\nb=%d\nc=%.2f'%(a,b,c))
-
+-----------------------------------------------
 # 1.6p
 r=3.75
 a=22/7.0*r*r
@@ -59,7 +59,7 @@ print('Circle Calculator')
 print('Given Radius of Circle   :%.4f'%r)
 print('Area of Given Circle     :%.4f'%a)
 print('Circumference            :%.4f'%c)
-
+----------------------------------------------------
 # 2.1p
 write a program to read integers A and B produce the remainder (expressed as an integer) of
 A/B for example the remainder of 13/2 is 1. while the remainder of 29/6 is 5.
@@ -72,7 +72,7 @@ c=a//b #6
 d=c*b
 e=a-d
 print('%i/%i=%i'%(a,b,e))
-
+-----------------------------------------------------
 # 2.2p
 write a program to read add the value of p,r,t,Calculate and display the simple interst using the
 formula i=prt. write the output with approprite headings.
@@ -84,5 +84,15 @@ t=int(input('Enter no of Years'))
 
 si=p*r/100*t
 print('Principle amount is:',si)
+----------------------------------------------------------
+# 2.3p
+with an interest rate I and a Principal P deposited for N Year period in a savings account write
+a program to compute a total principal T,given the formula:T=P(1+I)pow N
 '''
+# I=rate of interest , P=depositer amount , N= no of Years
+P=50000
+I=9.5
+N=5
+T=P*(1+I/100)**N
+print('Total value:%.2f'%T)
 
