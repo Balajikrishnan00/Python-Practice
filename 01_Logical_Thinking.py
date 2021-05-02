@@ -76,11 +76,13 @@ print('%i/%i=%i'%(a,b,e))
 # 2.2p
 write a program to read add the value of p,r,t,Calculate and display the simple interst using the
 formula i=prt. write the output with approprite headings.
-'''
-p=50000
-r=9.5/100
-t=5
 
-si=p*r*t
+p=int(input('Enter Principle Amount     :'))
+r=float(input('Enter rate of Interest   :'))
+
+t=int(input('Enter no of Years'))
+
+si=p*r/100*t
 print('Principle amount is:',si)
+'''
 
