@@ -143,10 +143,21 @@ print('The Amount of 90 Days:%.2f'%S_90)
 # 3.1p
 write a program to find the volume of a cone using the formula:
 v=1/3 * pi * r * r * h
-'''
+
 r=float(input('Enter  Radius of Cone:'))
 h=float(input('Enter Height of Cone:'))
 v= 1.0/3 * 22.0/7 * r * r * h
 print('The Volume of Cone:%.2f'%v)
+--------------------------------------------
+# 3.2 p
+The lowest temperature ever recorded in Antarctic is -126.9 Fahrenheit. Write a Program to convert this Temperature in
+degrees Centigrade and print the result with appropriate captions. the formula is:
+c= 5/9(F-32)
+
+'''
+Location=input('Enter Location Name :')
+F=float(input('Fahrenheit           :'))
+C= 5/9*(F-32.0)
+print('The %s of degrees Centigrade     :%.2f C'%(Location,C))
 
 
