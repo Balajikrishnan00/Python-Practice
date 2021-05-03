@@ -142,8 +142,11 @@ print('The Amount of 90 Days:%.2f'%S_90)
 ---------------------------------------------------
 # 3.1p
 write a program to find the volume of a cone using the formula:
-v=1/3*pi*r**2 h
-
+v=1/3 * pi * r * r * h
 '''
+r=float(input('Enter  Radius of Cone:'))
+h=float(input('Enter Height of Cone:'))
+v= 1.0/3 * 22.0/7 * r * r * h
+print('The Volume of Cone:%.2f'%v)
 
 
