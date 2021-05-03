@@ -108,7 +108,7 @@ where J is the number of times the interest is compounded per year compute and p
 the difference between total amounts when the principle ia compounded once and 365 times a year,
 also print the corresponding interests.
 
-'''
+
 P=50000
 R=9.5
 N=5
@@ -118,3 +118,32 @@ print(' Daily Total value:%.2f'%T1)
 J=1
 T2=P*(1+(R/100)/365)**(N*J)
 print('Yearly total value:%.2f'%T2)
+-------------------------------------------
+# 2.5
+A wholesaler accepts an amount P as promissory note at 7% in lieu of cash payment for delivered goods.
+write a program to compute the maturity value of the note for a 30,60 and 90 90-day short-term loan.The formula
+to compute the maturity value S is:
+S=P(1+I*N)
+where P is the principle l is the interest rate and N is the number of years
+(expressed N as number of days divide by 360)
+
+N1=30/360
+N2=60/360
+N3=90/360
+P=int(input('Enter Principle Amount:'))
+
+I=7/100
+S_30=P*(1+I*N1)
+S_60=P*(1+I*N2)
+S_90=P*(1+I*N3)
+print('The Amount of 30 Days:%.2f'%S_30)
+print('The Amount of 60 Days:%.2f'%S_60)
+print('The Amount of 90 Days:%.2f'%S_90)
+---------------------------------------------------
+# 3.1p
+write a program to find the volume of a cone using the formula:
+v=1/3*pi*r**2 h
+
+'''
+
+
