@@ -88,11 +88,33 @@ print('Principle amount is:',si)
 # 2.3p
 with an interest rate I and a Principal P deposited for N Year period in a savings account write
 a program to compute a total principal T,given the formula:T=P(1+I)pow N
-'''
+
 # I=rate of interest , P=depositer amount , N= no of Years
 P=50000
 I=9.5
 N=5
 T=P*(1+I/100)**N
 print('Total value:%.2f'%T)
+Ins=P-T
+print('rate of interest:%.2f'%Ins)
+----------------------------------------------------------
+# 2.4p
+Suppose the interest of 2.3 is compounded daily.write a program to compute:
+the total principle given by the formula
 
+T=P(1+I/J)**J-N
+
+where J is the number of times the interest is compounded per year compute and print
+the difference between total amounts when the principle ia compounded once and 365 times a year,
+also print the corresponding interests.
+
+'''
+P=50000
+R=9.5
+N=5
+J=365
+T1=P*(1+(R/100)/365)**(N*J)
+print(' Daily Total value:%.2f'%T1)
+J=1
+T2=P*(1+(R/100)/365)**(N*J)
+print('Yearly total value:%.2f'%T2)
