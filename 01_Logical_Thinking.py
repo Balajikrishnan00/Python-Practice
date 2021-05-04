@@ -154,10 +154,20 @@ The lowest temperature ever recorded in Antarctic is -126.9 Fahrenheit. Write a 
 degrees Centigrade and print the result with appropriate captions. the formula is:
 c= 5/9(F-32)
 
-'''
+
 Location=input('Enter Location Name :')
-F=float(input('Fahrenheit           :'))
+F=float(input('Fahrenheit Temperature:'))
 C= 5/9*(F-32.0)
 print('The %s of degrees Centigrade     :%.2f C'%(Location,C))
+-------------------------------------------------
+# 3.3 p
+write a program to compute and print the length of the hypotenuse of a right triangle,given its two legs
+A and B. print the results with appropriate captions
 
+'''
 
+import math
+a=float(input('Enter A value:'))
+b=float(input('Enter B value:'))
+c=math.sqrt((a*a)+(b*b))
+print(c)
