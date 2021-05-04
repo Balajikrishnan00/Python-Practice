@@ -176,10 +176,30 @@ Equivalent to the calender date given in the form month,day.The Julian date 23 i
 day of year. January 1 has Julian date 1, February 2 has Julian Date 33,
 December 31 has Julian Date 365, etc A formula to Approximate the
 Julian date is (month -1) * 30+day determine the julian date for the given Month and Day.
-'''
 
 day=int(input('Enter a Date:'))
 month=int(input('Enter a Month:'))
 
 julian=(month-1)*30+day
 print(julian)
+-----------------------------------------
+#3.5p
+
+
+strB=
+BBBBBB
+BBB  B
+BBBBBB
+BBBBBB
+
+
+-----------------------------------------
+# 3.5
+Mr.x is a bricklayer. last year his gross pay was XGrossPay.after deducting 6.85% for social security and 23.5%
+for federal income tax from his gross pay was his net income grater than Mrs y's net income?Mrs. Y is a teacher
+who grossed YGrossPay but had $850.45 deducted for her income retirement plan and 16.3% of her gross income deducted
+for income tax purposes.print the salaries of mr.x and y (test the program with XGrossPay as $23,564,99 and
+YGrossPay as $19,874
+'''
+
+
