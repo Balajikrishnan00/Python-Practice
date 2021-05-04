@@ -164,10 +164,22 @@ print('The %s of degrees Centigrade     :%.2f C'%(Location,C))
 write a program to compute and print the length of the hypotenuse of a right triangle,given its two legs
 A and B. print the results with appropriate captions
 
-'''
-
 import math
 a=float(input('Enter A value:'))
 b=float(input('Enter B value:'))
 c=math.sqrt((a*a)+(b*b))
-print(c)
+print('length of the hypotenuse:',c)
+-------------------------------------
+# 3.4p
+write a program to approximate the Julian Date(introduced by julius Caesar in 46 B.C)
+Equivalent to the calender date given in the form month,day.The Julian date 23 is the
+day of year. January 1 has Julian date 1, February 2 has Julian Date 33,
+December 31 has Julian Date 365, etc A formula to Approximate the
+Julian date is (month -1) * 30+day determine the julian date for the given Month and Day.
+'''
+
+day=int(input('Enter a Date:'))
+month=int(input('Enter a Month:'))
+
+julian=(month-1)*30+day
+print(julian)
