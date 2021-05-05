@@ -196,10 +196,20 @@ BBBBBB
 -----------------------------------------
 # 3.5
 Mr.x is a bricklayer. last year his gross pay was XGrossPay.after deducting 6.85% for social security and 23.5%
-for federal income tax from his gross pay was his net income grater than Mrs y's net income?Mrs. Y is a teacher
-who grossed YGrossPay but had $850.45 deducted for her income retirement plan and 16.3% of her gross income deducted
-for income tax purposes.print the salaries of mr.x and y (test the program with XGrossPay as $23,564,99 and
-YGrossPay as $19,874
+for federal income tax from his gross pay was his net income grater than Mrs y's net income?
+
+Mrs. Y is a teacher who grossed YGrossPay but had $850.45 deducted for her income retirement plan and
+16.3% of her gross income deducted for income tax purposes.print the salaries of mr.x and y
+(test the program with XGrossPay as $23,564.99 and YGrossPay as $19,874
 '''
+XGrossPay=23564.99
+XSocial=XGrossPay*6.85/100
+XTax=XGrossPay*23.5/100
+Xnet=XGrossPay-XSocial-XTax
+print('Xnet:%.2f'%Xnet)
 
-
+YGrossPay=19874
+YDetection=850.45
+Ytax=YGrossPay*16.3/100
+Ynet=YGrossPay-YDetection-Ytax
+print(Ynet)
