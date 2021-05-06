@@ -358,4 +358,25 @@ t=int(input('Enter the number seconds to reach the water surface:'))
 d=1/2*9.81*t*t
 print(d)
 -----------------------------
+# 5.2p
+for four resisters R1,R2,R3 and R4 in parallel the overall resistance R is given by:
+
+1/R= 1/R1 + 1/R2 + 1/R3 + 1/R4
+
+write a program to computeR and print the result as follows:(Use 1.5,3,4.5 6 ohms for R1,R2,R3,and R4 respectively
+for testing your program)
+
+R1=xx.x         R2=xx.x         R3=xx.x         R4=xx.x
+the overall resistance R=xx.x
+
+r1=1.5
+r2=3
+r3=4.5
+r4=6
+r=1/r1 + 1/r2 + 1/r3 + 1/r4
+#print(1/r)
+print('R1=%5.2f\t\tR2=%5.2f\t\tR3=%5.2f\t\tR4=%5.2f'%(r1,r2,r3,r4))
+print('the overall resistance %.4f'%(1/r))
+--------------------------------------------
 """
+
