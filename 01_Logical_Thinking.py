@@ -224,7 +224,7 @@ F=the finance charge in dollars,
 P is the principle and
 n=the number of scheduled installments payments, Write a program to determine the annual percentage rate for a loan
 (Test values:P=$50000,36 Months repayments period, n=$162.50 per month, Finance charge=36*162.5-5000=$850)
-"""
+
 P=float(input('Enter Principle amount:'))
 
 N=int(input('No of Payment per Year:'))
@@ -240,3 +240,46 @@ F=tCollection-P
 r= (2 + N) *F / (P*(1+n)) * 100
 
 print('Rate of Interest:%.2f'%r)
+-------------------------------------------------
+#  4.3p
+Miss T.drove X miles in Y hours and Spent Z for gas. Her car averages 14.5 miles per gallon write a program
+to compute her average speed number of gallon used and the average cost per gallon the output should be as follows
+(Test values:
+X =1050 miles,
+Y =17 1/2 hours,
+Z =$86.75)
+
+"""
+xmiles=1050
+
+yhours=17.5
+
+zcost=86.75
+
+aSpeed=(xmiles / yhours)
+
+nGallon=int(xmiles/14.5)
+
+Gallon=zcost/nGallon
+
+
+
+#print('Miles =          XXXX')
+print('Miles =\t\t\t%5.0f km'%xmiles)
+
+
+#print('Hours Driven =     YY.YY')
+print('Hours Driven =\t%5.0f Hours'%yhours)
+
+#print('Gas Cost =        ZZZ.ZZ')
+print('Gas Cost =\t\t%8.2f'%zcost)
+
+#print('Average Speed =   ---.--')
+print('Average Speed =\t%5.0f kmph'%aSpeed)
+
+#print('No. Gallons =     ---.--')
+print('No. Gallons =\t%5.0f'%nGallon)
+
+#print('Cost/Gallon =     ---.--')
+
+print('Cost/Gallon =\t%8.2f'%Gallon)
