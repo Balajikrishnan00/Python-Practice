@@ -378,5 +378,16 @@ r=1/r1 + 1/r2 + 1/r3 + 1/r4
 print('R1=%5.2f\t\tR2=%5.2f\t\tR3=%5.2f\t\tR4=%5.2f'%(r1,r2,r3,r4))
 print('the overall resistance %.4f'%(1/r))
 --------------------------------------------
+# 5.4p
+write a program to determine whether given value of x is a root of the polynomial:
+use(x=1.3 test your program)
+
+
 """
+import math
+x=1.4
+x1=17/3*math.pow(x,17)+4*math.pow(x,8)-0.76*math.pow(x,2)-686
+print(x1)
+
+
 
