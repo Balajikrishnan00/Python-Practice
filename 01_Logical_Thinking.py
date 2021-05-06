@@ -249,7 +249,7 @@ X =1050 miles,
 Y =17 1/2 hours,
 Z =$86.75)
 
-"""
+
 xmiles=1050
 
 yhours=17.5
@@ -283,3 +283,33 @@ print('No. Gallons =\t%5.0f'%nGallon)
 #print('Cost/Gallon =     ---.--')
 
 print('Cost/Gallon =\t%8.2f'%Gallon)
+-------------------------------------------------
+# 4.4 p
+write a program to produce exactly the following report on the cost c of operating technical
+devices
+        Cost Analysis
+
+Watts   Hours       Cost/KW     Cost
+65        6           .087      ---
+100       6           .087      ---
+
+The formula is
+                C=Wtk/1000
+                (where W=number of watts,T=time in hours,k=cost in cents per kilowatt hours)
+
+
+W1=65
+W2=100
+t=6
+rate=87
+c1=W1*t*rate/1000
+c2=W2*t*rate/1000
+#print(c1)
+#print(c2)
+print('\t\t   COST ANALYSIS')
+print('watts\tHours\t\tHours\\KW\tCost')
+print(' 65\t\t  6\t\t\t .087\t\t%.2f'%c1)
+print(' 65\t\t  6\t\t\t .087\t\t%.2f'%c2)
+-----------------------------------------
+
+"""
