@@ -311,5 +311,40 @@ print('watts\tHours\t\tHours\\KW\tCost')
 print(' 65\t\t  6\t\t\t .087\t\t%.2f'%c1)
 print(' 65\t\t  6\t\t\t .087\t\t%.2f'%c2)
 -----------------------------------------
+# 4.5p
+the date for any Easter Sunday can be computed as follows.Let N be the year for which Easter Sunday is to
+be computed.
+Let NA be the remainder of the division of N by 19.
+Let NB be the remainder of the division of N by 4.
+Let NC be the remainder of the division of N by 7.
+Let ND be the remainder of the division of(19.NA.+24)by 30.
+Let NE be the remainder of the division of(2.NB+4.NC+6ND+5)by 7.
+
+the date for Easter Sunday is then March(22.ND+NE).Note that this can give a date in April
+
+Write a program to read a year N and compute the date for Easter Sunday for that year using
+    the formula 22+ND+NE.The resulting day can be in either March or April
 
 """
+N=int(input('Enter a Year:'))
+
+NA= N % 19
+
+NB= N % 4
+
+NC= N % 7
+
+ND= (19 * NA + 24) % 30
+
+NE=(2 * NB + 4 * NC + 6 * ND + 5) % 7
+
+eSunday=22 + ND + NE
+
+
+if eSunday<=31:
+    print('Easter Sunday of %d is March %d'%(N,eSunday))
+else:
+    print('Easter Sunday of %d is April %d'%(N,eSunday-31))
+
+
+
