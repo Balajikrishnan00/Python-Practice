@@ -1,4 +1,4 @@
-'''
+"""
 # 1.1p
 a=10
 b=20
@@ -194,18 +194,19 @@ BBBBBB
 
 
 -----------------------------------------
-# 3.5
+# 4.1P
 Mr.x is a bricklayer. last year his gross pay was XGrossPay.after deducting 6.85% for social security and 23.5%
 for federal income tax from his gross pay was his net income grater than Mrs y's net income?
 
 Mrs. Y is a teacher who grossed YGrossPay but had $850.45 deducted for her income retirement plan and
 16.3% of her gross income deducted for income tax purposes.print the salaries of mr.x and y
 (test the program with XGrossPay as $23,564.99 and YGrossPay as $19,874
-'''
+
 XGrossPay=23564.99
 XSocial=XGrossPay*6.85/100
 XTax=XGrossPay*23.5/100
 Xnet=XGrossPay-XSocial-XTax
+
 print('Xnet:%.2f'%Xnet)
 
 YGrossPay=19874
@@ -213,3 +214,29 @@ YDetection=850.45
 Ytax=YGrossPay*16.3/100
 Ynet=YGrossPay-YDetection-Ytax
 print(Ynet)
+--------------------------------------
+# 4.2p
+The truth in lending law requires that money-lending institutions disclose the annual interest rate charged on
+loans the approximate rate is given by the formula
+R=(2+N)*F/P(n+1)
+where N is the number of payments per year,
+F=the finance charge in dollars,
+P is the principle and
+n=the number of scheduled installments payments, Write a program to determine the annual percentage rate for a loan
+(Test values:P=$50000,36 Months repayments period, n=$162.50 per month, Finance charge=36*162.5-5000=$850)
+"""
+P=float(input('Enter Principle amount:'))
+
+N=int(input('No of Payment per Year:'))
+
+n=float(input('No of Scheduled Payments:'))
+
+mp=float(input('Payments / Installment:'))
+
+tCollection=n*mp
+
+F=tCollection-P
+
+r= (2 + N) *F / (P*(1+n)) * 100
+
+print('Rate of Interest:%.2f'%r)
