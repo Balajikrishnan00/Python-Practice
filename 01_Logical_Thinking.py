@@ -325,7 +325,7 @@ the date for Easter Sunday is then March(22.ND+NE).Note that this can give a dat
 Write a program to read a year N and compute the date for Easter Sunday for that year using
     the formula 22+ND+NE.The resulting day can be in either March or April
 
-"""
+
 N=int(input('Enter a Year:'))
 
 NA= N % 19
@@ -345,6 +345,17 @@ if eSunday<=31:
     print('Easter Sunday of %d is March %d'%(N,eSunday))
 else:
     print('Easter Sunday of %d is April %d'%(N,eSunday-31))
+--------------------------------------------------------
+# 5.1p
+T seconds after dropping a stone into a well the stone hits the surface of the water Determine the height of the well
+given the formula d=1/2 gT**2 where d is the distance,g is the force of gravity(9.81 meter/s),and
+T is the time in seconds.(Use 15 seconds for testing your program)
 
 
+t=int(input('Enter the number seconds to reach the water surface:'))
 
+
+d=1/2*9.81*t*t
+print(d)
+-----------------------------
+"""
