@@ -19,4 +19,27 @@ def Factorial(n):
 num=int(input('Enter a num:'))
 result=Factorial(num)
 print(result)
--------------------"""
+-------------------
+# 3 simple interest
+#   A = P(1 + R/100) ** t
+#   Compound Interest = A – P
+import math
+def CompountInterest(P,R,T):
+    A=P*(pow(1+(R/100),T))
+    CI=round(A-P)
+    print('INR %.2f'%CI)
+P=10000
+R=10.25
+T=5
+CompountInterest(P,R,T)
+
+#print(math.pow(4,2))
+___________________________________"""
+# Find the length of the list and simply swap the first element with (n-1)th element.
+l=[12,32,45,61,77]
+
+def swap(uploadeList):
+    length=len(l)
+    uploadeList[0],uploadeList[length-1]=uploadeList[length-1],uploadeList[0]
+    return uploadeList
+print(swap(l))
