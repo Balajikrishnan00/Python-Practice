@@ -21,6 +21,7 @@ def NewDatabase(dbname):
     cusr.execute(f'CREATE DATABASE {dbname};')
     connection.commit()
     print('database create successfully.')
+    connection.close()
 
 def DeleteDatabase(dbname):
     connection = mysql.connector.connect(host='localhost', user='root', password='root')
@@ -28,9 +29,19 @@ def DeleteDatabase(dbname):
     crsr.execute(f'DROP DATABASE {dbname};')
     connection.commit()
     print('database delete successfully.')
+    connection.close()
+def ShowTable(dbname):
+    connection = mysql.connector.connect(host='localhost', user='root', password='root',database=dbname)
+    cusr=connection.cursor()
+    cusr.execute(f'SHOW TABLES')
+    res=cusr.fetchall()
+    for x in res:
+        print(x)
+    connection.close()
 
 
 
 dbname=input('Enter DB name:')
 #NewDatabase(dbname)
-DeleteDatabase(dbname)
+#DeleteDatabase(dbname)
+ShowTable(dbname)
