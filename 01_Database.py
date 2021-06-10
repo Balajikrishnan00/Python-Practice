@@ -15,6 +15,7 @@ cusr.execute(newDatabase)
 print('Database created successfully')
 """
 import mysql.connector
+from tabulate import tabulate
 def NewDatabase(dbname):
     connection=mysql.connector.connect(host='localhost',user='root',password='root')
     cusr=connection.cursor()
@@ -41,7 +42,8 @@ def ShowTable(dbname):
 
 
 
-dbname=input('Enter DB name:')
+#dbname=input('Enter DB name:')
 #NewDatabase(dbname)
 #DeleteDatabase(dbname)
-ShowTable(dbname)
+#ShowTable(dbname)
+#TableData(dbname)
